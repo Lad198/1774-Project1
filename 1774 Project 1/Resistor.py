@@ -5,7 +5,7 @@ class Resistor:
         self.bus1 = bus1
         self.bus2 = bus2
         self.r = r
-        self.g = null
+        self.g = None
 
     def calc_g(self):
         self.g = 1/self.r
