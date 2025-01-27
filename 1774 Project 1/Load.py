@@ -5,8 +5,8 @@ class Load:
         self.bus1 = bus1
         self.p = p
         self.v = v
-        self.g = None
         self.r = v ** 2 / p
+        self.g = self.calc_g()
 
     def calc_g(self):
-        self.g = 1 / self.r
+        return 1 / self.r
