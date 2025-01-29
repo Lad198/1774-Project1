@@ -17,8 +17,6 @@ Obj.add_load_element("Lb", "B", 2000, 100)
 S = Solution(Obj)
 S.do_power_flow()
 
-# Print the nodal voltages
+# Print the nodal voltages and circuit current
 Obj.print_nodal_voltage()
-
-# Print the circuit current
 Obj.print_circuit_current()
