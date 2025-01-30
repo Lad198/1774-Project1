@@ -13,7 +13,6 @@ class Circuit:
         self.vsource = 0
         self.i = 0  # Current in the circuit
         self.voltages = {}  # Dictionary to store bus voltages
-        self.g = {}
 
     # Method to add a bus
     def add_bus(self, bus: str):
@@ -50,5 +49,7 @@ class Circuit:
 
     # Extra method to get conductance values
     def get_g_elements(self):
+        g = {}
         for resistor in self.resistors.values():
-            self.g[resistor.name] = resistor.g
+            g[resistor.name] = resistor.g
+            return g[resistor.name]
